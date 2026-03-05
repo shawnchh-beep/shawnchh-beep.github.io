@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,54 +6,204 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Support - EstateConvert</title>
   <style>
-    body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial;max-width:860px;margin:auto;padding:36px 18px;line-height:1.65;color:#0b1220;}
-    h1,h2{line-height:1.25}
-    .muted{color:#5b6475}
-    .card{border:1px solid #e6e8ee;border-radius:14px;padding:18px;background:#fbfcff;margin:14px 0}
-    a{color:#0b63ff}
-    code{background:#f2f4f8;padding:2px 6px;border-radius:6px}
+    body{
+      font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial;
+      max-width:900px;
+      margin:auto;
+      padding:36px 18px;
+      line-height:1.7;
+      color:#0b1220;
+    }
+    h1{ margin:0 0 10px; }
+    h2{ margin-top:26px; }
+    .muted{ color:#5b6475; }
+    .top{
+      border:1px solid #e6e8ee;
+      background:#fbfcff;
+      border-radius:14px;
+      padding:16px 18px;
+      margin:14px 0 24px;
+    }
+    .lang{
+      border:1px solid #e6e8ee;
+      border-radius:14px;
+      padding:18px;
+      margin:16px 0;
+      background:#ffffff;
+    }
+    hr{
+      border:none;
+      border-top:1px solid #e6e8ee;
+      margin:26px 0;
+    }
+    a{ color:#0b63ff; text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+    code{
+      background:#f2f4f8;
+      padding:2px 6px;
+      border-radius:6px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+      margin-top:12px;
+    }
+    .card{
+      border:1px solid #e6e8ee;
+      border-radius:14px;
+      padding:14px 16px;
+      background:#fbfcff;
+    }
+    .card h3{ margin:0 0 6px; font-size:15px; }
+    .card p{ margin:0; color:#5b6475; }
+    .footer{
+      margin-top:28px;
+      font-size:12px;
+      color:#5b6475;
+    }
+    @media (max-width:720px){
+      .grid{ grid-template-columns:1fr; }
+    }
   </style>
 </head>
-<body>
-  <h1>Support</h1>
-  <p class="muted">EstateConvert — Area & Currency Converter</p>
 
-  <div class="card">
-    <h2>Contact</h2>
-    <p>
-      Email: <b>support@YOUR-DOMAIN.com</b><br/>
-      Please include: iPhone model, iOS version, and app version.
-    </p>
+<body>
+
+  <h1>Support / 使用支援</h1>
+
+  <div class="top">
+    <b>EstateConvert</b> — Area & Currency Converter<br/>
+    <b>房產換算器</b> — 房屋面積與匯率換算工具<br/>
+    <span class="muted">Contact / 聯絡信箱：<b>shawn.chh@gmail.com</b></span><br/>
+    <span class="muted">Last updated / 最後更新：March 2026</span>
   </div>
 
-  <div class="card">
+  <div class="grid">
+    <div class="card">
+      <h3>Privacy Policy</h3>
+      <p><a href="./privacy.html">View Privacy Policy</a></p>
+    </div>
+    <div class="card">
+      <h3>Home</h3>
+      <p><a href="./index.html">Back to Home</a></p>
+    </div>
+  </div>
+
+  <!-- English -->
+  <section class="lang">
+    <h2>English</h2>
+    <p>
+      Need help with <b>EstateConvert</b>? This page provides support and common troubleshooting tips.
+      If you still need assistance, email <b>shawn.chh@gmail.com</b>.
+    </p>
+
+    <h2>Contact Support</h2>
+    <p>
+      Email: <b>shawn.chh@gmail.com</b><br/>
+      Please include:
+    </p>
+    <ul>
+      <li>iPhone model (e.g., iPhone 15 Pro)</li>
+      <li>iOS version (e.g., iOS 17.3)</li>
+      <li>App version (e.g., 1.0)</li>
+      <li>Steps to reproduce the issue</li>
+      <li>Screenshots (if possible)</li>
+    </ul>
+
     <h2>FAQ</h2>
     <p><b>Q1: Does the app work offline?</b><br/>
-      Area conversion works offline. Currency conversion may require internet access to fetch the latest rates.
+      Area conversion works offline. Currency conversion may require internet access to fetch the latest exchange rates.
     </p>
 
-    <p><b>Q2: How accurate are the results?</b><br/>
-      Conversions use standard formulas. Currency results depend on the data provider’s published rates and update frequency.
+    <p><b>Q2: How accurate are the conversions?</b><br/>
+      Area conversions use standard formulas. Currency results depend on the data provider’s published rates and update frequency.
     </p>
 
-    <p><b>Q3: What units are supported?</b><br/>
-      Common real estate units such as Ping, <code>m²</code>, <code>ft²</code>, tatami, and more (depending on app settings/version).
+    <p><b>Q3: What units and currencies are supported?</b><br/>
+      The app supports common real-estate units such as <code>Ping</code>, <code>m²</code>, <code>ft²</code>, and more (depending on app version),
+      plus popular currencies such as TWD, USD, JPY, and CNY.
     </p>
 
-    <p><b>Q4: I found a bug — how do I report it?</b><br/>
-      Send an email with steps to reproduce + screenshots if possible.
+    <p><b>Q4: How do I report a bug or request a feature?</b><br/>
+      Email us with details and screenshots. Feature requests are welcome.
     </p>
-  </div>
 
-  <div class="card">
+    <h2>Troubleshooting</h2>
+    <ul>
+      <li>If exchange rates do not update, check your network connection and try again later.</li>
+      <li>Restart the app after changing iOS language/region settings.</li>
+      <li>If the app crashes, reinstall and contact support with your device details.</li>
+    </ul>
+
     <h2>App Information</h2>
     <p>
       App: <b>EstateConvert</b><br/>
-      Version: <b>1.0</b> (update as needed)<br/>
-      Last updated: March 5, 2026
+      Subtitle: <b>Area & Currency Converter</b><br/>
+      Version: <b>1.0</b> (update as needed)
     </p>
+  </section>
+
+  <hr/>
+
+  <!-- Chinese -->
+  <section class="lang">
+    <h2>中文</h2>
+    <p>
+      若您在使用 <b>房產換算器（EstateConvert）</b> 時需要協助，請參考本頁常見問題與排除方式。
+      如仍需協助，請寄信至 <b>shawn.chh@gmail.com</b>。
+    </p>
+
+    <h2>聯絡客服</h2>
+    <p>
+      Email：<b>shawn.chh@gmail.com</b><br/>
+      建議提供以下資訊以加快處理：
+    </p>
+    <ul>
+      <li>iPhone 型號（例：iPhone 15 Pro）</li>
+      <li>iOS 版本（例：iOS 17.3）</li>
+      <li>App 版本（例：1.0）</li>
+      <li>問題發生步驟（可條列）</li>
+      <li>截圖或畫面錄影（若方便）</li>
+    </ul>
+
+    <h2>常見問題</h2>
+    <p><b>Q1：可以離線使用嗎？</b><br/>
+      面積換算可離線使用；匯率換算可能需要網路以取得最新匯率。
+    </p>
+
+    <p><b>Q2：換算結果準確嗎？</b><br/>
+      面積換算採用標準公式；匯率換算結果取決於匯率資料提供者的公布資料與更新頻率。
+    </p>
+
+    <p><b>Q3：支援哪些單位與幣別？</b><br/>
+      支援常見房產單位如 <code>坪</code>、<code>m²</code>、<code>ft²</code> 等（依版本可能不同），
+      幣別支援常見如 TWD、USD、JPY、CNY 等。
+    </p>
+
+    <p><b>Q4：如何回報問題或提出功能建議？</b><br/>
+      直接寄信描述問題與需求，並附上截圖，我們會評估與改善。
+    </p>
+
+    <h2>排除方式</h2>
+    <ul>
+      <li>匯率無法更新：請確認網路連線，稍後再試。</li>
+      <li>更改系統語言或地區後：建議重新啟動 App。</li>
+      <li>若發生閃退：可嘗試重新安裝，並提供裝置資訊給客服。</li>
+    </ul>
+
+    <h2>App 資訊</h2>
+    <p>
+      App：<b>房產換算器（EstateConvert）</b><br/>
+      副標：<b>房屋面積與匯率換算工具</b><br/>
+      版本：<b>1.0</b>（可自行更新）
+    </p>
+  </section>
+
+  <div class="footer">
+    Tip: Use this page as App Store Connect → Support URL.
   </div>
 
-  <p><a href="./index.html">← Back to Home</a> · <a href="./privacy.html">Privacy Policy</a></p>
 </body>
 </html>
+```
